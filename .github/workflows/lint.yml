@@ -1,0 +1,13 @@
+name: Lint
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  lint:
+    uses: czerwonk/go-ci/.github/workflows/lint.yml@v5
